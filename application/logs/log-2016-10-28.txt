@@ -1,0 +1,60 @@
+ERROR - 2016-10-28 11:18:18 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+ERROR - 2016-10-28 11:18:29 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+ERROR - 2016-10-28 16:33:32 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND q.name like '%%'' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q  AND q.name like '%%'
+ERROR - 2016-10-28 16:33:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND q.name like '%%'' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q  AND q.name like '%%'
+ERROR - 2016-10-28 16:34:03 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND q.name like '%%'' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q  AND q.name like '%%'
+ERROR - 2016-10-28 16:34:03 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND q.name like '%%'' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q  AND q.name like '%%'
+ERROR - 2016-10-28 16:36:12 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'q.name like '%%' q.status_available = '' q.name like '%%' and  q.status_availabl' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q where q.group = 'engineer' q.name like '%%' q.status_available = '' q.name like '%%' and  q.status_available = ''
+ERROR - 2016-10-28 16:36:59 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'q.name like '%%' q.status_available = '' q.name like '%%' and  q.status_availabl' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q where q.group = 'engineer' q.name like '%%' q.status_available = '' q.name like '%%' and  q.status_available = ''
+ERROR - 2016-10-28 16:38:01 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'q.status_available = '' q.name like '%%' and  q.status_available = ''' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q where q.name like '%%' q.status_available = '' q.name like '%%' and  q.status_available = ''
+ERROR - 2016-10-28 16:38:56 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'q.status_available = '' q.name like '%%' and  q.status_available = ''' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q where q.name like '%%' q.status_available = '' q.name like '%%' and  q.status_available = ''
+ERROR - 2016-10-28 16:39:49 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'q.status_available = '' q.name like '%%' and  q.status_available = ''' at line 1 - Invalid query: select q.* from ( select s.*, (select o.outlet_id from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_id, (select o.name from issue i join outlet o on o.outlet_id = i.outlet_id where i.staff_id = s.staff_id and i.status = 'open') as outlet_name, if(( select count(*) from issue i where  i.staff_id = s.staff_id and i.status = 'open') > 0, 'on', 'off' ) as status_available from staff s ) as q where q.name like '%%' q.status_available = '' q.name like '%%' and  q.status_available = ''
+ERROR - 2016-10-28 17:39:25 --> Query error: Unknown column 'o.outlet_name' in 'field list' - Invalid query: SELECT *, `o`.`outlet_name` as `outlet_name`
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `s`.`staff_id` = `i`.`staff_id`
+ERROR - 2016-10-28 17:42:21 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+L' at line 1 - Invalid query: SELECT `o`.`name` as `outlet_name`, *
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `s`.`staff_id` = `i`.`staff_id`
+ERROR - 2016-10-28 17:42:46 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+L' at line 1 - Invalid query: SELECT `o`.`name` as `outlet_name`, *
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `s`.`staff_id` = `i`.`staff_id`
+ERROR - 2016-10-28 18:32:33 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *, `o`.`name` as `outlet_name`
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE `i`.`status` = 'open'
+ERROR - 2016-10-28 22:51:00 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *, `o`.`name` as `outlet_name`
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE `i`.`status` = 'open'
+ERROR - 2016-10-28 22:51:57 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *, `o`.`name` as `outlet_name`
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE `i`.`status` = 'open'
+AND  `s`.`name` LIKE '%mulyo%' ESCAPE '!'
+ERROR - 2016-10-28 23:15:59 --> 404 Page Not Found: issue/Administrator/history
+ERROR - 2016-10-28 23:16:24 --> 404 Page Not Found: issue/Administrator/history
+ERROR - 2016-10-28 23:16:57 --> 404 Page Not Found: issue/Administrator/history
+ERROR - 2016-10-28 23:17:10 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *, `o`.`name` as `outlet_name`
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE `i`.`status` = 'done'
+AND  `s`.`name` LIKE '%mulyo%' ESCAPE '!'

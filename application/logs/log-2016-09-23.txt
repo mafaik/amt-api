@@ -1,0 +1,74 @@
+ERROR - 2016-09-23 17:30:30 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10, 10' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -10, 10
+ERROR - 2016-09-23 17:30:34 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10, 10' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -10, 10
+ERROR - 2016-09-23 17:31:06 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10, 10' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -10, 10
+ERROR - 2016-09-23 17:32:36 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10, 10' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -10, 10
+ERROR - 2016-09-23 17:33:10 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10, 10' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -10, 10
+ERROR - 2016-09-23 17:33:16 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-15, 15' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -15, 15
+ERROR - 2016-09-23 17:34:11 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-15, 15' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -15, 15
+ERROR - 2016-09-23 17:35:07 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-15, 15' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -15, 15
+ERROR - 2016-09-23 17:35:52 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-15, 15' at line 3 - Invalid query: SELECT *
+FROM `staff`
+ LIMIT -15, 15
+ERROR - 2016-09-23 19:20:36 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`
+FROM `outlet` `o`
+LEFT JOIN `staff` `s` ON `staff_id` = `o`.`staff_id`
+ERROR - 2016-09-23 19:28:33 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`
+FROM `outlet` `o`
+LEFT JOIN `staff` `s` ON `staff_id` = `o`.`staff_id`
+WHERE `o`.`outlet_id` = '1'
+ERROR - 2016-09-23 19:29:37 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`
+FROM `outlet` `o`
+LEFT JOIN `staff` `s` ON `staff_id` = `o`.`staff_id`
+WHERE `o`.`outlet_id` = '1'
+ERROR - 2016-09-23 19:29:41 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`
+FROM `outlet` `o`
+LEFT JOIN `staff` `s` ON `staff_id` = `o`.`staff_id`
+WHERE `o`.`outlet_id` = '1'
+ERROR - 2016-09-23 19:30:05 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`
+FROM `outlet` `o`
+LEFT JOIN `staff` `s` ON `staff_id` = `o`.`staff_id`
+WHERE `o`.`outlet_id` = '1'
+ERROR - 2016-09-23 19:30:34 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`
+FROM `outlet` `o`
+LEFT JOIN `staff` `s` ON `staff_id` = `o`.`staff_id`
+WHERE `o`.`outlet_id` = '1'
+ERROR - 2016-09-23 19:34:46 --> Query error: Unknown column 'o.outlet_contact' in 'field list' - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`, `o`.`staff_id`, `o`.`outlet_id`, `o`.`outlet_contact`
+FROM `outlet` `o`
+LEFT JOIN `staff` `s` ON `s`.`staff_id` = `o`.`staff_id`
+WHERE `o`.`outlet_id` = '1'
+ERROR - 2016-09-23 19:35:36 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/OutletUpdateModel.php 62
+ERROR - 2016-09-23 19:36:13 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/OutletUpdateModel.php 62
+ERROR - 2016-09-23 20:39:08 --> Severity: error --> Exception: Unable to locate the model you have specified: OutletInsertModel /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Loader.php 344
+ERROR - 2016-09-23 20:39:45 --> Severity: error --> Exception: Unable to locate the model you have specified: OutletInsertModel /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Loader.php 344
+ERROR - 2016-09-23 20:42:08 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/OutletInsertModel.php 52
+ERROR - 2016-09-23 20:43:41 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/OutletInsertModel.php 52
+ERROR - 2016-09-23 21:07:44 --> 404 Page Not Found: staff/Deletes/index
+ERROR - 2016-09-23 21:08:14 --> Severity: Error --> Call to undefined method StaffDeleteModel::detail() /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/controllers/staff/Delete.php 29
+ERROR - 2016-09-23 21:09:15 --> Severity: Error --> Call to undefined method StaffDeleteModel::detail() /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/controllers/staff/Delete.php 29
+ERROR - 2016-09-23 21:38:50 --> 404 Page Not Found: outlet/Updatepasword/index
+ERROR - 2016-09-23 21:39:51 --> 404 Page Not Found: outlet/Updatepasword/index
+ERROR - 2016-09-23 21:40:24 --> 404 Page Not Found: outlet/Update-pasword/index
+ERROR - 2016-09-23 21:40:40 --> 404 Page Not Found: outlet/Updatepasword/index
+ERROR - 2016-09-23 21:41:24 --> 404 Page Not Found: outlet/Updatepasword/index
+ERROR - 2016-09-23 21:41:34 --> 404 Page Not Found: staff/Updatepasword/index
+ERROR - 2016-09-23 21:47:12 --> Severity: Error --> Call to undefined method OutletUpdatePasswordModel::update() /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/controllers/outlet/Updatepassword.php 38
+ERROR - 2016-09-23 21:47:52 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/OutletUpdatePasswordModel.php 43
+ERROR - 2016-09-23 22:03:14 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/StaffUpdateModel.php 40
+ERROR - 2016-09-23 22:03:32 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/StaffUpdateModel.php 40
+ERROR - 2016-09-23 22:04:35 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/StaffUpdatePasswordModel.php 43

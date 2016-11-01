@@ -1,0 +1,39 @@
+ERROR - 2016-09-30 15:24:00 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE i.staff_id IS NULL
+AND `i`.`status` =0
+ERROR - 2016-09-30 17:42:35 --> Query error: Unknown column 'o.issue_id' in 'where clause' - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`, `i`.*
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE `o`.`issue_id` = '1'
+ERROR - 2016-09-30 17:43:06 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region` as `outlet_region`, `o`.`note` as `outlet_note`, `i`.*
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE `i`.`issue_id` = '1'
+ERROR - 2016-09-30 18:23:17 --> Severity: Notice --> Undefined property: Update::$outlet_repository /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Model.php 77
+ERROR - 2016-09-30 18:23:17 --> Severity: Notice --> Trying to get property of non-object /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 102
+ERROR - 2016-09-30 18:23:17 --> Severity: Error --> Call to a member function num_rows() on array /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 106
+ERROR - 2016-09-30 18:25:21 --> Severity: Notice --> Undefined property: Update::$outlet_repository /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Model.php 77
+ERROR - 2016-09-30 18:25:21 --> Severity: Notice --> Trying to get property of non-object /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 102
+ERROR - 2016-09-30 18:25:22 --> Severity: Error --> Call to a member function num_rows() on array /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 106
+ERROR - 2016-09-30 18:25:38 --> Severity: Notice --> Undefined property: Update::$outlet_repository /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Model.php 77
+ERROR - 2016-09-30 18:25:38 --> Severity: Notice --> Trying to get property of non-object /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 102
+ERROR - 2016-09-30 18:28:02 --> Severity: Notice --> Undefined property: Update::$outlet_repository /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Model.php 77
+ERROR - 2016-09-30 18:28:02 --> Severity: Notice --> Trying to get property of non-object /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 102
+ERROR - 2016-09-30 18:28:03 --> Severity: Error --> Call to a member function num_rows() on array /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 106
+ERROR - 2016-09-30 18:30:31 --> Severity: Notice --> Undefined property: Update::$outlet_repository /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Model.php 77
+ERROR - 2016-09-30 18:30:31 --> Severity: Notice --> Trying to get property of non-object /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 102
+ERROR - 2016-09-30 18:30:31 --> Severity: Error --> Call to a member function num_rows() on array /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 106
+ERROR - 2016-09-30 18:31:20 --> Severity: Notice --> Undefined property: Update::$outlet_repository /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Model.php 77
+ERROR - 2016-09-30 18:31:20 --> Severity: Notice --> Trying to get property of non-object /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 102
+ERROR - 2016-09-30 18:34:15 --> Severity: Notice --> Undefined property: Update::$outlet_repository /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Model.php 77
+ERROR - 2016-09-30 18:34:15 --> Severity: Notice --> Trying to get property of non-object /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 102
+ERROR - 2016-09-30 18:34:25 --> Severity: Notice --> Undefined property: Update::$outlet_repository /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Model.php 77
+ERROR - 2016-09-30 18:34:25 --> Severity: Notice --> Trying to get property of non-object /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 102
+ERROR - 2016-09-30 19:06:08 --> 404 Page Not Found: issue/Outlet/select-update
+ERROR - 2016-09-30 19:08:33 --> Severity: Error --> Call to undefined method IssueUpdateModel::update() /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/controllers/issue/Update.php 34
+ERROR - 2016-09-30 19:12:06 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueUpdateModel.php 66

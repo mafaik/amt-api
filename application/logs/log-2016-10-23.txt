@@ -1,0 +1,25 @@
+ERROR - 2016-10-23 20:59:17 --> Severity: Notice --> Undefined variable: query_where /home/putusudarma/marsukarya/amt/API NEW 2016-10-22/application/models/StaffListsModel.php 43
+ERROR - 2016-10-23 20:59:18 --> Severity: Notice --> Undefined variable: query_where /home/putusudarma/marsukarya/amt/API NEW 2016-10-22/application/models/StaffListsModel.php 48
+ERROR - 2016-10-23 21:00:46 --> 404 Page Not Found: issue/Staffreport/progress
+ERROR - 2016-10-23 21:01:13 --> 404 Page Not Found: issue/Staffreport/progress
+ERROR - 2016-10-23 21:02:20 --> 404 Page Not Found: issue/Staffreport/progress
+ERROR - 2016-10-23 21:03:15 --> Query error: Unknown column 'o.region as outlet_region o.contact' in 'field list' - Invalid query: SELECT `s`.`staff_id` as `staff_id`, `s`.`username` as `staff_username`, `s`.`date_registered` as `staff_date_registered`, `s`.`group` as `staff_group`, `s`.`name` as `staff_name`, `s`.`address` as `staff_address`, `s`.`city` as `staff_city`, `s`.`region` as `staff_region`, `s`.`note` as `staff_note`, `o`.`outlet_id` as `outlet_id`, `o`.`username` as `outlet_username`, `o`.`date_registered` as `outlet_date_registered`, `o`.`name` as `outlet_name`, `o`.`address` as `outlet_address`, `o`.`city` as `outlet_city`, `o`.`region as outlet_region o`.`contact` as `outlet_contact`, `o`.`note` as `outlet_note`
+FROM `outlet` `o`
+LEFT JOIN `staff` `s` ON `staff_id` = `o`.`staff_id`
+ERROR - 2016-10-23 21:03:23 --> Severity: Notice --> Undefined variable: query_where /home/putusudarma/marsukarya/amt/API NEW 2016-10-22/application/models/StaffListsModel.php 43
+ERROR - 2016-10-23 21:03:23 --> Severity: Notice --> Undefined variable: query_where /home/putusudarma/marsukarya/amt/API NEW 2016-10-22/application/models/StaffListsModel.php 48
+ERROR - 2016-10-23 21:03:32 --> 404 Page Not Found: issue/Staffreport/open
+ERROR - 2016-10-23 21:04:20 --> 404 Page Not Found: staff/Issue/engineer
+ERROR - 2016-10-23 21:05:11 --> 404 Page Not Found: issue/Staffreport/open
+ERROR - 2016-10-23 21:05:19 --> 404 Page Not Found: issue/Staffreport/open
+ERROR - 2016-10-23 21:05:35 --> 404 Page Not Found: issue/Staffreport/progress
+ERROR - 2016-10-23 21:07:24 --> 404 Page Not Found: issue/Outletreport/open
+ERROR - 2016-10-23 21:07:56 --> 404 Page Not Found: issue/Outletreport/open
+ERROR - 2016-10-23 21:08:51 --> 404 Page Not Found: issue/Staffreport/pending
+ERROR - 2016-10-23 21:09:14 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `building` `b` ON `b`.`building_id` = `o`.`building_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE `i`.`staff_id` = '2'
+AND `i`.`status` =0

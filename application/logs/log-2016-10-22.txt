@@ -1,0 +1,26 @@
+ERROR - 2016-10-22 00:48:25 --> 404 Page Not Found: staff/Pending/index
+ERROR - 2016-10-22 00:48:50 --> 404 Page Not Found: issue/Enginer/pending
+ERROR - 2016-10-22 00:49:04 --> Query error: Column 'staff_id' in on clause is ambiguous - Invalid query: SELECT *
+FROM `issue` `i`
+LEFT JOIN `outlet` `o` ON `o`.`outlet_id` = `i`.`outlet_id`
+LEFT JOIN `building` `b` ON `b`.`building_id` = `o`.`building_id`
+LEFT JOIN `staff` `s` ON `staff_id` = `i`.`staff_id`
+WHERE `i`.`staff_id` = '1'
+AND `i`.`status` =0
+ERROR - 2016-10-22 15:07:35 --> Query error: Table 'amt.notification' doesn't exist - Invalid query: INSERT INTO `notification` (`type`, `id`, `status_outlet`, `status_staff`, `status_administrator`) VALUES ('pending', 30, 0, 0, 0)
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined index: filename /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 44
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined index: filename /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 45
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined index: filename /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 46
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined index: filename /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 47
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined index: filename /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 44
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined index: filename /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 45
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined index: filename /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 46
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined index: filename /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 47
+ERROR - 2016-10-22 15:12:49 --> Severity: Notice --> Undefined variable: uploadData /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 73
+ERROR - 2016-10-22 15:12:49 --> Severity: Warning --> implode(): Invalid arguments passed /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 73
+ERROR - 2016-10-22 15:12:49 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Exceptions.php:272) /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/vendor/codeigniter/framework/system/core/Common.php 573
+ERROR - 2016-10-22 15:14:16 --> Severity: Parsing Error --> syntax error, unexpected ']' /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 47
+ERROR - 2016-10-22 16:58:10 --> Severity: Error --> Call to undefined method IssueProgressModel::update() /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/controllers/issue/Progress.php 31
+ERROR - 2016-10-22 16:59:02 --> Severity: Error --> Call to undefined method IssueProgressModel::update() /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/controllers/issue/Progress.php 31
+ERROR - 2016-10-22 16:59:38 --> Query error: Table 'amt.notification' doesn't exist - Invalid query: INSERT INTO `notification` (`type`, `id`, `status_outlet`, `status_staff`, `status_administrator`) VALUES ('checkin', '32', 0, 1, 0)
+ERROR - 2016-10-22 17:00:38 --> Query error: Table 'amt.notification' doesn't exist - Invalid query: INSERT INTO `notification` (`type`, `id`, `status_outlet`, `status_staff`, `status_administrator`) VALUES ('checkin', '32', 0, 1, 0)

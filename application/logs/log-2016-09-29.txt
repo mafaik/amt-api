@@ -1,0 +1,8 @@
+ERROR - 2016-09-29 21:52:04 --> Severity: Error --> Call to a member function num_rows() on array /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 35
+ERROR - 2016-09-29 21:57:03 --> Severity: Notice --> Undefined property: CI_DB_mysqli_driver::$affected_rows /Users/steviearistomaryono/Documents/webprojects/monitoring.dev/htdocs/api/application/models/IssueInsertModel.php 70
+ERROR - 2016-09-29 22:32:42 --> The upload path does not appear to be valid.
+ERROR - 2016-09-29 22:34:02 --> The upload path does not appear to be valid.
+ERROR - 2016-09-29 22:34:48 --> The upload path does not appear to be valid.
+ERROR - 2016-09-29 22:35:16 --> Query error: Column 'staff_id' cannot be null - Invalid query: INSERT INTO `issue` (`staff_id`, `subject`, `issue`, `outlet_id`, `attachment`, `status`) VALUES (NULL, 'tesda', 'asdasd', '5', '44a259e2e3c51866ffcbb75ad79a95e4.jpg', 0)
+ERROR - 2016-09-29 22:38:17 --> Query error: Column 'staff_id' cannot be null - Invalid query: INSERT INTO `issue` (`staff_id`, `subject`, `issue`, `outlet_id`, `attachment`, `status`) VALUES (NULL, 'sdfsdf', 'dfgdfgs\r\nsdfsdf', '2', '25f1d9929bcb973f1470fbd37aa489b5.jpg', 0)
+ERROR - 2016-09-29 22:39:43 --> Query error: Column 'staff_id' cannot be null - Invalid query: INSERT INTO `issue` (`staff_id`, `subject`, `issue`, `outlet_id`, `attachment`, `status`) VALUES (NULL, 'asdas', 'sdfs', '2', 'c68ac8e18a0013acf9d23305600d7210.jpg', 0)

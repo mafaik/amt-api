@@ -1,0 +1,15 @@
+ERROR - 2016-10-31 15:21:03 --> Severity: Error --> Call to a member function num_rows() on array D:\xampp\htdocs\api\application\models\IssueUpdateModel.php 106
+ERROR - 2016-10-31 15:21:53 --> Severity: Error --> Call to a member function num_rows() on array D:\xampp\htdocs\api\application\models\IssueUpdateModel.php 106
+ERROR - 2016-10-31 15:38:44 --> Severity: Error --> Call to a member function num_rows() on array D:\xampp\htdocs\api\application\models\IssueUpdateModel.php 106
+ERROR - 2016-10-31 16:01:43 --> Severity: Error --> Call to a member function num_rows() on array D:\xampp\htdocs\api\application\models\IssueUpdateModel.php 108
+ERROR - 2016-10-31 16:26:19 --> Severity: Notice --> Undefined variable: uploadData D:\xampp\htdocs\api\application\models\IssueUpdateModel.php 71
+ERROR - 2016-10-31 16:26:19 --> Severity: Warning --> implode(): Invalid arguments passed D:\xampp\htdocs\api\application\models\IssueUpdateModel.php 71
+ERROR - 2016-10-31 17:13:15 --> Severity: Notice --> Undefined variable: uploadData D:\xampp\htdocs\api\application\models\IssueInsertModel.php 267
+ERROR - 2016-10-31 17:13:15 --> Severity: Warning --> implode(): Invalid arguments passed D:\xampp\htdocs\api\application\models\IssueInsertModel.php 267
+ERROR - 2016-10-31 17:13:15 --> Severity: Notice --> Undefined variable: uploadData D:\xampp\htdocs\api\application\models\IssueInsertModel.php 267
+ERROR - 2016-10-31 17:13:15 --> Severity: Warning --> implode(): Invalid arguments passed D:\xampp\htdocs\api\application\models\IssueInsertModel.php 267
+ERROR - 2016-10-31 17:13:15 --> Severity: Notice --> Undefined variable: uploadData D:\xampp\htdocs\api\application\models\IssueInsertModel.php 267
+ERROR - 2016-10-31 17:13:15 --> Severity: Warning --> implode(): Invalid arguments passed D:\xampp\htdocs\api\application\models\IssueInsertModel.php 267
+ERROR - 2016-10-31 17:13:15 --> Severity: Notice --> Undefined variable: uploadData D:\xampp\htdocs\api\application\models\IssueInsertModel.php 267
+ERROR - 2016-10-31 17:13:15 --> Severity: Warning --> implode(): Invalid arguments passed D:\xampp\htdocs\api\application\models\IssueInsertModel.php 267
+ERROR - 2016-10-31 17:13:15 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\api\vendor\codeigniter\framework\system\core\Exceptions.php:272) D:\xampp\htdocs\api\vendor\codeigniter\framework\system\core\Common.php 573

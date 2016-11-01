@@ -1,0 +1,18 @@
+{
+	"description" : "Application Monitoring API",
+	"autoload": {
+		"psr-4": {
+			"LivePos\\": "application/"
+		}
+	},
+	"require": {
+		"php": ">=5.3.2",
+		"codeigniter/framework": "3.0.*",
+		"psecio/jwt": "^1.7",
+		"zendframework/zend-permissions-acl": "^2.6",
+		"rlanvin/php-rrule": "1.*"
+	},
+	"require-dev": {
+		"mikey179/vfsStream": "1.1.*"
+	}
+}
